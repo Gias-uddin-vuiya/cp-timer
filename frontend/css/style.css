@@ -4,13 +4,12 @@ body{
     box-sizing: border-box;
 }
 
-nav .navbar-brand{
-    font-weight: bold;
+nav .how-it-works, .navbar-brand{
+    font-weight: 900;
+    font-size: 1.25rem;
 }
 
 nav .how-it-works{
-    font-size: large;
-    font-weight: bold;
     color : #2563eb;
 }
 
@@ -20,7 +19,6 @@ nav .how-it-works:hover{
 
 /* main function design */
 .challenge-msg {
-
     border-radius: 1.5rem;
     font-weight: 900;
     font-size: 1.25rem;
@@ -38,3 +36,4 @@ nav .how-it-works:hover{
     transform: scale(1.03);
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
+
