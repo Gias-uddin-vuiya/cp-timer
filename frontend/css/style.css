@@ -17,3 +17,24 @@ nav .how-it-works{
 nav .how-it-works:hover{
     border-bottom: 1px solid black;
 }
+
+/* main function design */
+.challenge-msg {
+
+    border-radius: 1.5rem;
+    font-weight: 900;
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+    padding: 0.5rem 1.25rem;
+    letter-spacing: 0.025em;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+    cursor: pointer;
+}
+
+.challenge-msg:hover {
+    background-color: #d2dcec; /* nice blue on hover */
+    color: #2563eb;
+    transform: scale(1.03);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
