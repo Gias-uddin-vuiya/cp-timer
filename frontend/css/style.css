@@ -55,7 +55,7 @@ nav .how-it-works:hover{
 }
 
 .time-choice-btn:hover {
-    background-color: #e8edf4;
+    background-color: #f2f7fe;
     background-blend-mode: lighten;
     transform: translateY(-2px);
 }
@@ -84,17 +84,20 @@ nav .how-it-works:hover{
     padding: 15px;
 
     display: flex;
-    flex-direction: column; /* stack content vertically */
-    justify-content: center; /* vertical centering */
-    align-items: center;     /* horizontal centering */
-    text-align: center;      /* center text */
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center;     
+    text-align: center;     
     margin: auto;    
+} 
+
+.timer-circle:hover{
+    background-color: #f2f7fe;
+    background-blend-mode: lighten;
 }
 
-.display-1{
-    /* font-size: 30px;
-    font-weight: bold;
+.display-time{
+    font-size: 5rem;
     text-align: center;
-    color: #2563eb; */
+    color: #2563eb;
 }
-  
