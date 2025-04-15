@@ -58,23 +58,38 @@
       </div>
   </main>
 
-    <!-- Music Bar (Bottom Fixed) -->
-    <div class="container-fluid bg-light border-top py-2 fixed-bottom shadow-sm">
-      <div class="d-flex align-items-center justify-content-between px-3">
-        <div class="d-flex align-items-center">
+  <!-- Music Bar (Bottom Fixed) -->
+  <div class="container-fluid bg-light border-top py-2 fixed-bottom shadow-sm">
+    <div class="d-flex align-items-center justify-content-between px-3">
+      <div class="d-flex align-items-center">
 
-          <button id="playPauseBtn" class="btn me-2">
-            <i class="fa-solid fa-list"></i>
-          </button>
-          
-          <audio controls>
-            <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/ogg">
-          </audio>
-          <span id="trackName" class="fw-semibold">Background music - Lofi 3</span>
-        </div>
+        <button id="playPauseBtn" class="btn me-2">
+          <i class="fa-solid fa-list"></i>
+        </button>
+        
+        <audio controls>
+          <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/ogg">
+        </audio>
+        <span id="trackName" class="fw-semibold">Background music - Lofi 3</span>
       </div>
-      
-    </div>
 
+      <button id="fullscreenToggle" class="btn">
+        <i class="fa-solid fa-expand"></i>
+      </button>
+    </div>
+  </div>
+
+
+  <script>
+    const fullscreenButton = document.getElementById("fullscreenToggle");
+  
+    fullscreenButton.addEventListener("click", () => {
+      if (!document.fullscreenElement) {
+        document.documentElement.requestFullscreen();
+      } else {
+        document.exitFullscreen();
+      }
+    });
+  </script>
   </body>
 </html>
