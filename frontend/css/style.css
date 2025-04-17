@@ -4,17 +4,9 @@ body{
     box-sizing: border-box;
 }
 
-nav .how-it-works, .navbar-brand{
+nav .navbar-brand{
     font-weight: 900;
     font-size: 1.25rem;
-}
-
-nav .how-it-works{
-    color : #2563eb;
-}
-
-nav .how-it-works:hover{
-    border-bottom: 1px solid black;
 }
 
 /* main function design */

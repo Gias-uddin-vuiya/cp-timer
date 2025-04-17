@@ -5,7 +5,7 @@ const fullscreenButton = document.getElementById("fullscreenToggle");
 
 
 let countdown;
-let timeLeft = 15 * 60; // min in second
+let timeLeft = 2 * 60; // min in second
 
 startTimer.addEventListener('click', (evt) => {
     evt.preventDefault()
@@ -18,7 +18,7 @@ startTimer.addEventListener('click', (evt) => {
 
         displayTime.textContent = `${String(minute).padStart(2, "0")}:${String(second).padStart(2, "0")}`
 
-        if (timeLeft < 0) {
+        if (timeLeft <= 0) {
             clearInterval(countdown)
         }
 

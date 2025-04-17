@@ -5,6 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>CP Timer</title>
         <link rel="stylesheet" href="css/style.css">
+        <!-- <link rel="stylesheet" href="../frontend/css/style.css"> -->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
       </head>
@@ -15,7 +16,11 @@
           <a class="navbar-brand position-absolute start-0 ms-3" href="#">CP Timer</a>
           <ul class="navbar-nav">
               <li class="nav-item">
-                  <a class="nav-link how-it-works" href="#">How It Works</a>
+                <!-- <i class="fa fa-clock"></i> -->
+                <a class="nav-link customize-btn" href="#"><i class="fa fa-clock"></i> Customize</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link how-to" href="#"><i class="fa fa-question-circle"></i> How To</a>
               </li>
           </ul>
       </div>
@@ -25,11 +30,10 @@
   <main>
       <div class="container-fluid">
         <div class="row">
-          
           <!-- Left Side: Time Controls (70%) -->
           <div class="col-md-9 time-controls border-end">
             <p class="text-center  "> <span class="challenge-msg">Sharpen your skills—take challenge! 🧩 </span></p>            
-            
+
             <div class="text-center mt-4 timer-parent">
               <div class="choice-and-select-time">
                   <button type="button" class="time-choice-btn btn-pomodoro">Pomodoro</button>
@@ -72,7 +76,7 @@
         <audio controls>
           <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/ogg">
         </audio>
-        <span id="trackName" class="fw-semibold">Background music - Lofi 3</span>
+        <span id="trackName" class="fw-semibold"> Background music - Lofi 3</span>
       </div>
 
       <button id="fullscreenToggle" class="btn">
