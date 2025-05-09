@@ -1,0 +1,112 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav .navbar-brand{
+    font-weight: 900;
+    font-size: 1.25rem;
+}
+
+/* main function design */
+.challenge-msg {
+    border-radius: 1.5rem;
+    font-weight: 900;
+    font-size: 1.25rem; 
+    line-height: 1.75rem;
+    padding: 0.5rem 1.25rem;
+    letter-spacing: 0.025em;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05); 
+    cursor: pointer;
+}
+
+.challenge-msg:hover {
+    background-color: #d2dcec; /* nice blue on hover */
+    color: #2563eb;
+    transform: scale(1.03);
+}
+
+.choice-and-select-time .btn {
+    margin: 0 10px;
+}
+
+.time-choice-btn {
+    margin: 0 10px;
+    padding: 8px 14px;
+    background-color: rgb(255, 251, 251);
+    
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.5s ease;
+    font-size: 18px;
+    font-weight: 600;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+.time-choice-btn:hover {
+    background-color: #f2f7fe;
+    background-blend-mode: lighten;
+    transform: translateY(-2px);
+}
+
+
+
+.btn-pomodoro{
+    color: #2563eb;
+}
+
+.rest-btn, .long-rest-btn{
+    color: #1b8855;
+}
+
+
+
+/* for timer circle */
+
+.timer-circle {
+    width: 45vw;
+    height: 45vw;
+    max-width: 350px;
+    max-height: 350px;
+    border: 5px solid #c6d4f5;
+    border-radius: 50%;
+    padding: 15px;
+
+    display: flex;
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center;     
+    text-align: center;     
+    margin: auto;    
+} 
+
+.timer-circle:hover{
+    background-color: #f2f7fe;
+    background-blend-mode: lighten;
+}
+
+.display-time{
+    font-size: 5rem;
+    text-align: center;
+    color: #2563eb;
+}
+
+/* right sidebar task manager */
+
+.add-item{
+    font-size: 18px;
+    padding: 15px 10px;
+    border: 2px dashed gray;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+
+.add-item:hover{
+    background-color: #f2f7fe;
+    background-blend-mode: lighten;
+    transform: translateY(-2px);
+}
