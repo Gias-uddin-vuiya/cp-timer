@@ -7,7 +7,7 @@ let timerDisplay = document.querySelector(".display-time");
 
 
 // default time for the timer
-let defaultTime = 1 * 60;
+let defaultTime = 5 * 60;
 let timeLeft = defaultTime;
 let timerInterval = null;
 let isPaused = false;
